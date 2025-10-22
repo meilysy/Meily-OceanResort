@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meily - Ocean Resort • Accommodation</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="image" href="images/accomodation.jpg">
+  <meta name="description" content="Luxury accommodations at Ocean Resort. Choose from standard rooms, deluxe ocean view rooms, and spacious suites with competitive pricing.">
+</head>
+<body>
+  <header class="sub-header">
+    <div class="sub-banner accommodation-banner">
+      <a href="index.html" class="banner-logo" aria-label="Ocean Resort - Return to Home Page" title="Go to Home Page">
+        <img src="images/logo.png" alt="Ocean Resort Logo" class="banner-logo-img">
+        <div class="banner-logo-text">
+          <div class="banner-logo-name">Meily - Ocean Resort</div>
+          <div class="banner-logo-tagline">Luxury Getaway</div>
+        </div>
+      </a>
+      <div class="banner-overlay compact">
+        <h1>Accommodation</h1>
+        <p>Luxury rooms and suites with ocean views</p>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="accommodation.html" class="active">Accommodation</a></li>
+        <li><a href="#">Restaurant</a></li>
+        <li><a href="#">Amenities</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Special Offers</a></li>
+        <li><a href="#">Contact & Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ACCOMMODATION ROOMS -->
+    <section id="rooms" class="section">
+      <div class="container">
+        <h2>Our Accommodations</h2>
+        
+        <!-- Standard Room -->
+        <div class="accommodation-item" id="standard">
+          <div class="accommodation-grid">
+            <div class="accommodation-image">
+              <img src="images/standard room.jpg" alt="Standard Room with partial ocean view" />
+            </div>
+            <div class="accommodation-details">
+              <h3>Standard Room</h3>
+              <p><strong>From $189 - $259 per night</strong></p>
+              <div class="room-features">
+                <p>Perfect for couples or friends seeking comfort and value. Our standard rooms feature:</p>
+                <ul>
+                  <li>King or two queen beds</li>
+                  <li>Partial ocean view</li>
+                  <li>Modern bathroom with rain shower</li>
+                  <li>320 sq ft of comfortable space</li>
+                  <li>Fast Wi-Fi, 55" TV, minifridge</li>
+                  <li>In-room safe and coffee/tea station</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accommodation-booking">
+              <a class="btn btn-primary" href="#pricing">Get More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deluxe Ocean View -->
+        <div class="accommodation-item" id="deluxe">
+          <div class="accommodation-grid">
+            <div class="accommodation-image">
+              <img src="images/deluxe ocean view.jpg" alt="Deluxe Ocean View with balcony" />
+            </div>
+            <div class="accommodation-details">
+              <h3>Deluxe Ocean View</h3>
+              <p><strong>From $259 - $349 per night</strong></p>
+              <div class="room-features">
+                <p>Wake up to breathtaking ocean views from your private balcony. Features include:</p>
+                <ul>
+                  <li>King bed with premium linens</li>
+                  <li>Private balcony with full ocean view</li>
+                  <li>360 sq ft of elegant space</li>
+                  <li>Walk-in shower and luxury amenities</li>
+                  <li>Nespresso machine and Bluetooth speaker</li>
+                  <li>Turndown service available</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accommodation-booking">
+              <a class="btn btn-primary" href="#pricing">Get More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- One-Bedroom Suite -->
+        <div class="accommodation-item" id="suite">
+          <div class="accommodation-grid">
+            <div class="accommodation-image">
+              <img src="images/one bedroom suite.jpg" alt="One-Bedroom Suite with separate living area" />
+            </div>
+            <div class="accommodation-details">
+              <h3>One-Bedroom Suite</h3>
+              <p><strong>From $359 - $499 per night</strong></p>
+              <div class="room-features">
+                <p>Spacious suite perfect for longer stays or special occasions. Includes:</p>
+                <ul>
+                  <li>King bed plus sofa bed</li>
+                  <li>Separate living area and dining nook</li>
+                  <li>Kitchenette with modern appliances</li>
+                  <li>520 sq ft with high-floor balcony</li>
+                  <li>Soaking tub and 65" TV</li>
+                  <li>Priority spa access</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accommodation-booking">
+              <a class="btn btn-primary" href="#pricing">Get More Info</a>
+            </div>
+          </div>
+        </div>
+  </div>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2>Transparent Pricing</h2>
+        <p class="muted">Pricing varies by season and availability. Rates below are typical for standard season and include taxes & fees.</p>
+        <div class="pricing-wrap">
+          <table class="pricing" id="pricing">
+            <caption class="visually-hidden">Ocean Resort pricing comparison</caption>
+            <thead>
+              <tr>
+                <th>Offering</th>
+                <th>Details</th>
+                <th>Price (USD)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Standard Room</td>
+                <td>King or 2 Queens • Partial Ocean View</td>
+                <td>$189–$259 / night</td>
+              </tr>
+              <tr>
+                <td>Deluxe Ocean View</td>
+                <td>Private Balcony • High Floor</td>
+                <td>$259–$349 / night</td>
+              </tr>
+              <tr>
+                <td>One-Bedroom Suite</td>
+                <td>Living Area • Kitchenette • Top Floor</td>
+                <td>$359–$499 / night</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="cta-section">
+          <h3>Ready to Book Your Stay?</h3>
+          <p class="muted">Secure your preferred dates and room type today</p>
+          <a class="btn btn-primary" href="#" aria-disabled="true" title="Coming soon">Book Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <div>Contact info: <a href="mailto:sy.m@northeastern.edu">sy.m@northeastern.edu</a></div>
+        <div>Social Media: <a href="#" aria-label="Facebook">Facebook</a> | <a href="#" aria-label="Instagram">Instagram</a> | <a href="#" aria-label="Twitter">Twitter</a></div>
+        <div><a href="#">Contact Us</a> | <a href="accommodation.html">Accommodations</a> | <a href="index.html#our-story">About Us</a> | <a href="index.html">Home</a></div>
+      </div>
+      <div class="footer-copyright">
+        <div>Copyright&copy; <span id="year"></span> Ocean Resort | Meily Sy</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ===== Rooms & Suites: open detail modal on click =====
+    function wireModalTriggers(scope = document){
+      scope.querySelectorAll('[data-open]').forEach(el => {
+        el.addEventListener('click', e => {
+          e.preventDefault();
+          const id = el.getAttribute('data-open');
+          const dlg = document.getElementById(id);
+          if (dlg && typeof dlg.showModal === 'function') {
+            dlg.showModal();
+          }
+        });
+        // Also allow Enter/Space on card
+        if (el.getAttribute('role') === 'button') {
+          el.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              el.click();
+            }
+          });
+        }
+      });
+    }
+    wireModalTriggers();
+
+  </script>
+</body>
+</html>
