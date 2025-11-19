@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery • Meily - Ocean Resort</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="image" href="images/hero banner.jpg">
+  <meta name="description" content="Browse photos of Ocean Resort's luxurious accommodations, dining venues, spa facilities, and stunning oceanfront location.">
+</head>
+<body>
+  <header class="sub-header">
+    <div class="sub-banner gallery-banner">
+      <a href="index.html" class="banner-logo" aria-label="Ocean Resort - Return to Home Page" title="Go to Home Page">
+        <img src="images/logo.PNG" alt="Ocean Resort Logo" class="banner-logo-img">
+        <div class="banner-logo-text">
+          <div class="banner-logo-name">Meily - Ocean Resort</div>
+          <div class="banner-logo-tagline">Luxury Getaway</div>
+        </div>
+      </a>
+      <div class="banner-overlay compact">
+        <h1>Gallery</h1>
+        <p>Explore our resort through photos</p>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="amenities.html">Amenities</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="offers.html">Special Offers</a></li>
+        <li><a href="contact.html">Contact & Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Photo Slideshow -->
+    <section class="slideshow-section section">
+      <div class="container">
+        <h2>Discover Ocean Resort</h2>
+        <p>Take a visual journey through our brand new resort</p>
+        
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img src="images/hero banner.jpg" alt="Ocean Resort Exterior">
+            <div class="slide-caption">Oceanfront Resort - Our brand new resort overlooking pristine beaches</div>
+          </div>
+
+          <div class="slide fade">
+            <img src="images/one bedroom suite.jpg" alt="One-Bedroom Suite">
+            <div class="slide-caption">One-Bedroom Suite - Spacious suite with separate living area</div>
+          </div>
+
+          <div class="slide fade">
+            <img src="images/deluxe ocean view.jpg" alt="Ocean View">
+            <div class="slide-caption">Private Balconies - Breathtaking ocean sunrises from your private outdoor space</div>
+          </div>
+
+          <div class="slide fade">
+            <img src="images/standard room.jpg" alt="Room Interior">
+            <div class="slide-caption">Modern Interiors - Contemporary design with coastal-inspired décor</div>
+          </div>
+
+          <div class="slide fade">
+            <img src="images/dining.jpg" alt="Coastal Grill">
+            <div class="slide-caption">Coastal Grill - Fresh seafood and wood-fired specialties</div>
+          </div>
+
+          <div class="slide fade">
+            <img src="images/breakfast.jpg" alt="Breakfast Buffet">
+            <div class="slide-caption">Breakfast Buffet - Extensive breakfast selection and fresh pastries</div>
+          </div>
+
+          <div class="slide fade">
+            <img src="images/dinner sunset.jpg" alt="Sunset Dining">
+            <div class="slide-caption">Sunset Dining - Spectacular ocean sunset views every evening</div>
+          </div>
+
+          <div class="slide fade">
+            <img src="images/spa.jpg" alt="Spa Services">
+            <div class="slide-caption">Spa Services - Luxurious treatment rooms for massages and facials</div>
+          </div>
+
+          <div class="slide fade">
+            <img src="images/fitness.jpg" alt="Fitness Center">
+            <div class="slide-caption">Fitness Center - Modern equipment with ocean views</div>
+          </div>
+
+          <div class="slide fade">
+            <img src="images/grand ballroom.jpg" alt="Grand Ballroom">
+            <div class="slide-caption">Grand Ballroom - Elegant ballroom with crystal chandeliers</div>
+          </div>
+
+          <div class="slide fade">
+            <img src="images/beachfront ceremony.jpg" alt="Beachfront Wedding">
+            <div class="slide-caption">Beachfront Ceremonies - Say "I do" with the ocean as your backdrop</div>
+          </div>
+
+          <div class="slide fade">
+            <img src="images/oceanview conference.jpg" alt="Conference Room">
+            <div class="slide-caption">Conference Facilities - Professional meeting spaces with ocean views</div>
+          </div>
+
+          <!-- Navigation arrows -->
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots/indicators -->
+        <div class="slideshow-dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          <span class="dot" onclick="currentSlide(10)"></span>
+          <span class="dot" onclick="currentSlide(11)"></span>
+          <span class="dot" onclick="currentSlide(12)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Virtual Tour CTA -->
+    <section class="cta section">
+      <div class="container">
+        <h2>Experience Ocean Resort in Person</h2>
+        <p>Pictures can only capture so much. Book your stay or schedule a property tour to experience our resort firsthand.</p>
+        <div class="cta-buttons">
+          <a class="btn btn-primary" href="accommodation.html">Book Your Stay</a>
+          <a class="btn btn-primary" href="contact.html">Schedule a Tour</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <div>Contact info: <a href="mailto:sy.m@northeastern.edu">sy.m@northeastern.edu</a></div>
+        <div>Social Media: <a href="#" aria-label="Facebook">Facebook</a> | <a href="#" aria-label="Instagram">Instagram</a> | <a href="#" aria-label="Twitter">Twitter</a></div>
+        <div><a href="contact.html">Contact Us</a> | <a href="accommodation.html">Accommodations</a> | <a href="index.html#our-story">About Us</a> | <a href="index.html">Home</a></div>
+      </div>
+      <div class="footer-copyright">
+        <div>Copyright &copy; <span id="year"></span> Ocean Resort | Meily Sy</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Slideshow functionality
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function changeSlide(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      let dots = document.getElementsByClassName("dot");
+      
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    // Auto-advance slides every 5 seconds
+    setInterval(() => {
+      changeSlide(1);
+    }, 5000);
+  </script>
+</body>
+</html>
