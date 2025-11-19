@@ -45,86 +45,105 @@
         <h2>Discover Ocean Resort</h2>
         <p>Take a visual journey through our brand new resort</p>
         
-        <div class="slideshow-container">
-          <div class="slide fade">
-            <img src="images/hero banner.jpg" alt="Ocean Resort Exterior">
-            <div class="slide-caption">Oceanfront Resort - Our brand new resort overlooking pristine beaches</div>
+        <div class="css-slideshow-container">
+          <!-- Radio buttons for slide control (hidden) -->
+          <input type="radio" name="slideshow" id="slide1" checked>
+          <input type="radio" name="slideshow" id="slide2">
+          <input type="radio" name="slideshow" id="slide3">
+          <input type="radio" name="slideshow" id="slide4">
+          <input type="radio" name="slideshow" id="slide5">
+          <input type="radio" name="slideshow" id="slide6">
+          <input type="radio" name="slideshow" id="slide7">
+          <input type="radio" name="slideshow" id="slide8">
+          <input type="radio" name="slideshow" id="slide9">
+          <input type="radio" name="slideshow" id="slide10">
+          <input type="radio" name="slideshow" id="slide11">
+          <input type="radio" name="slideshow" id="slide12">
+          
+          <!-- Slides -->
+          <div class="css-slides">
+            <div class="css-slide">
+              <img src="images/hero banner.jpg" alt="Ocean Resort Exterior">
+              <div class="slide-caption">Oceanfront Resort - Our brand new resort overlooking pristine beaches</div>
+            </div>
+
+            <div class="css-slide">
+              <img src="images/one bedroom suite.jpg" alt="One-Bedroom Suite">
+              <div class="slide-caption">One-Bedroom Suite - Spacious suite with separate living area</div>
+            </div>
+
+            <div class="css-slide">
+              <img src="images/deluxe ocean view.jpg" alt="Ocean View">
+              <div class="slide-caption">Private Balconies - Breathtaking ocean sunrises from your private outdoor space</div>
+            </div>
+
+            <div class="css-slide">
+              <img src="images/standard room.jpg" alt="Room Interior">
+              <div class="slide-caption">Modern Interiors - Contemporary design with coastal-inspired décor</div>
+            </div>
+
+            <div class="css-slide">
+              <img src="images/dining.jpg" alt="Coastal Grill">
+              <div class="slide-caption">Coastal Grill - Fresh seafood and wood-fired specialties</div>
+            </div>
+
+            <div class="css-slide">
+              <img src="images/breakfast.jpg" alt="Breakfast Buffet">
+              <div class="slide-caption">Breakfast Buffet - Extensive breakfast selection and fresh pastries</div>
+            </div>
+
+            <div class="css-slide">
+              <img src="images/dinner sunset.jpg" alt="Sunset Dining">
+              <div class="slide-caption">Sunset Dining - Spectacular ocean sunset views every evening</div>
+            </div>
+
+            <div class="css-slide">
+              <img src="images/spa.jpg" alt="Spa Services">
+              <div class="slide-caption">Spa Services - Luxurious treatment rooms for massages and facials</div>
+            </div>
+
+            <div class="css-slide">
+              <img src="images/fitness.jpg" alt="Fitness Center">
+              <div class="slide-caption">Fitness Center - Modern equipment with ocean views</div>
+            </div>
+
+            <div class="css-slide">
+              <img src="images/grand ballroom.jpg" alt="Grand Ballroom">
+              <div class="slide-caption">Grand Ballroom - Elegant ballroom with crystal chandeliers</div>
+            </div>
+
+            <div class="css-slide">
+              <img src="images/beachfront ceremony.jpg" alt="Beachfront Wedding">
+              <div class="slide-caption">Beachfront Ceremonies - Say "I do" with the ocean as your backdrop</div>
+            </div>
+
+            <div class="css-slide">
+              <img src="images/oceanview conference.jpg" alt="Conference Room">
+              <div class="slide-caption">Conference Facilities - Professional meeting spaces with ocean views</div>
+            </div>
           </div>
 
-          <div class="slide fade">
-            <img src="images/one bedroom suite.jpg" alt="One-Bedroom Suite">
-            <div class="slide-caption">One-Bedroom Suite - Spacious suite with separate living area</div>
+          <!-- Navigation Labels (act as buttons) -->
+          <div class="css-nav">
+            <label for="slide1" class="css-prev" aria-label="Previous slide">&#10094;</label>
+            <label for="slide2" class="css-next" aria-label="Next slide">&#10095;</label>
           </div>
 
-          <div class="slide fade">
-            <img src="images/deluxe ocean view.jpg" alt="Ocean View">
-            <div class="slide-caption">Private Balconies - Breathtaking ocean sunrises from your private outdoor space</div>
+          <!-- Dot indicators -->
+          <div class="css-dots">
+            <label for="slide1" class="css-dot" aria-label="Go to slide 1"></label>
+            <label for="slide2" class="css-dot" aria-label="Go to slide 2"></label>
+            <label for="slide3" class="css-dot" aria-label="Go to slide 3"></label>
+            <label for="slide4" class="css-dot" aria-label="Go to slide 4"></label>
+            <label for="slide5" class="css-dot" aria-label="Go to slide 5"></label>
+            <label for="slide6" class="css-dot" aria-label="Go to slide 6"></label>
+            <label for="slide7" class="css-dot" aria-label="Go to slide 7"></label>
+            <label for="slide8" class="css-dot" aria-label="Go to slide 8"></label>
+            <label for="slide9" class="css-dot" aria-label="Go to slide 9"></label>
+            <label for="slide10" class="css-dot" aria-label="Go to slide 10"></label>
+            <label for="slide11" class="css-dot" aria-label="Go to slide 11"></label>
+            <label for="slide12" class="css-dot" aria-label="Go to slide 12"></label>
           </div>
-
-          <div class="slide fade">
-            <img src="images/standard room.jpg" alt="Room Interior">
-            <div class="slide-caption">Modern Interiors - Contemporary design with coastal-inspired décor</div>
-          </div>
-
-          <div class="slide fade">
-            <img src="images/dining.jpg" alt="Coastal Grill">
-            <div class="slide-caption">Coastal Grill - Fresh seafood and wood-fired specialties</div>
-          </div>
-
-          <div class="slide fade">
-            <img src="images/breakfast.jpg" alt="Breakfast Buffet">
-            <div class="slide-caption">Breakfast Buffet - Extensive breakfast selection and fresh pastries</div>
-          </div>
-
-          <div class="slide fade">
-            <img src="images/dinner sunset.jpg" alt="Sunset Dining">
-            <div class="slide-caption">Sunset Dining - Spectacular ocean sunset views every evening</div>
-          </div>
-
-          <div class="slide fade">
-            <img src="images/spa.jpg" alt="Spa Services">
-            <div class="slide-caption">Spa Services - Luxurious treatment rooms for massages and facials</div>
-          </div>
-
-          <div class="slide fade">
-            <img src="images/fitness.jpg" alt="Fitness Center">
-            <div class="slide-caption">Fitness Center - Modern equipment with ocean views</div>
-          </div>
-
-          <div class="slide fade">
-            <img src="images/grand ballroom.jpg" alt="Grand Ballroom">
-            <div class="slide-caption">Grand Ballroom - Elegant ballroom with crystal chandeliers</div>
-          </div>
-
-          <div class="slide fade">
-            <img src="images/beachfront ceremony.jpg" alt="Beachfront Wedding">
-            <div class="slide-caption">Beachfront Ceremonies - Say "I do" with the ocean as your backdrop</div>
-          </div>
-
-          <div class="slide fade">
-            <img src="images/oceanview conference.jpg" alt="Conference Room">
-            <div class="slide-caption">Conference Facilities - Professional meeting spaces with ocean views</div>
-          </div>
-
-          <!-- Navigation arrows -->
-          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-          <a class="next" onclick="changeSlide(1)">&#10095;</a>
-        </div>
-
-        <!-- Dots/indicators -->
-        <div class="slideshow-dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-          <span class="dot" onclick="currentSlide(6)"></span>
-          <span class="dot" onclick="currentSlide(7)"></span>
-          <span class="dot" onclick="currentSlide(8)"></span>
-          <span class="dot" onclick="currentSlide(9)"></span>
-          <span class="dot" onclick="currentSlide(10)"></span>
-          <span class="dot" onclick="currentSlide(11)"></span>
-          <span class="dot" onclick="currentSlide(12)"></span>
         </div>
       </div>
     </section>
@@ -165,43 +184,6 @@
       links.classList.toggle('open');
     });
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Slideshow functionality
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function changeSlide(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("slide");
-      let dots = document.getElementsByClassName("dot");
-      
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-
-    // Auto-advance slides every 5 seconds
-    setInterval(() => {
-      changeSlide(1);
-    }, 5000);
   </script>
 </body>
 </html>
