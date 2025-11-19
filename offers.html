@@ -129,17 +129,14 @@
   </footer>
 
   <script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.getElementById('nav-links');
-    
-    if (navToggle && navLinks) {
-      navToggle.addEventListener('click', () => {
-        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-        navToggle.setAttribute('aria-expanded', !isExpanded);
-        navLinks.classList.toggle('active');
-      });
-    }
-    
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+    });
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
