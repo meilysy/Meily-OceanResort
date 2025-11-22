@@ -19,7 +19,7 @@ A modern, responsive luxury resort website showcasing oceanfront accommodations,
 - 🏠 **8 Fully Responsive Pages** - Optimized for desktop, tablet, and mobile devices
 - 🎨 **Modern Design System** - Consistent branding with CSS custom properties
 - 📱 **Mobile-First Navigation** - Collapsible hamburger menu for small screens
-- 🖼️ **CSS-Only Photo Gallery** - Pure CSS auto-advancing slideshow
+- 🖼️ **CSS-Only Photo Gallery** - Pure CSS slideshow
 - 📝 **Interactive Booking Forms** - Form submissions with thank you messages and auto-reset
 - ♿ **WCAG Accessibility** - Semantic HTML, ARIA labels, and keyboard navigation
 
