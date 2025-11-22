@@ -116,7 +116,6 @@ A modern, responsive luxury resort website showcasing oceanfront accommodations,
 ### Technologies Used
 - **HTML5**: Semantic markup, accessibility features
 - **CSS3**: Custom properties, Grid, Flexbox, keyframe animations
-- **JavaScript**: Minimal JS for mobile navigation and form handling only
 - **Responsive Design**: Mobile-first approach with media queries
 - **CSS-Only Slideshow**: Pure CSS animations with radio button controls
 
@@ -142,13 +141,6 @@ A modern, responsive luxury resort website showcasing oceanfront accommodations,
 - Tables (.pricing)
 - CSS-Only Slideshow (.css-slideshow-container, .css-slide)
 ```
-
-### JavaScript Features
-```javascript
-// Mobile Navigation Toggle
-- Hamburger menu functionality
-- ARIA attribute management
-- Dynamic year in footer
 
 // Form Handling
 - Booking form submission with thank you alert
