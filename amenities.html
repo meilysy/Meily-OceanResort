@@ -24,7 +24,12 @@
       </div>
     </div>
     <nav class="site-nav" aria-label="Primary">
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <ul id="nav-links" class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="accommodation.html">Accommodation</a></li>
@@ -53,23 +58,25 @@
         <h2>✨ Wellness & Rejuvenation Center</h2>
         <p class="muted">Your journey to complete wellness starts here</p>
         
-        <!-- Fitness Section -->
-        <article class="feature-item">
-          <img src="images/fitness.jpg" alt="State-of-the-Art Fitness Center" />
-          <div class="feature-content">
-            <h3>🏋️ Fitness & Classes</h3>
-            <p>Experience our state-of-the-art fitness center with premium equipment, personal training, and daily group classes including yoga, aqua aerobics, and HIIT sessions.</p>
-          </div>
-        </article>
+        <div class="grid-3">
+          <!-- Fitness Section -->
+          <article class="card">
+            <img src="images/fitness.jpg" alt="State-of-the-Art Fitness Center" />
+            <div class="card-body">
+              <h3>🏋️ Fitness & Classes</h3>
+              <p>Experience our state-of-the-art fitness center with premium equipment, personal training, and daily group classes including yoga, aqua aerobics, and HIIT sessions.</p>
+            </div>
+          </article>
 
-        <!-- Spa Section -->
-        <article class="feature-item">
-          <img src="images/spa.jpg" alt="Luxury Spa Treatment Room" />
-          <div class="feature-content">
-            <h3>💆 Spa & Wellness</h3>
-            <p>Indulge in rejuvenating spa treatments, massages, facials, and body therapies. Enjoy our steam room, sauna, and hydrotherapy pools for complete relaxation.</p>
-          </div>
-        </article>
+          <!-- Spa Section -->
+          <article class="card">
+            <img src="images/spa.jpg" alt="Luxury Spa Treatment Room" />
+            <div class="card-body">
+              <h3>💆 Spa & Wellness</h3>
+              <p>Indulge in rejuvenating spa treatments, massages, facials, and body therapies. Enjoy our steam room, sauna, and hydrotherapy pools for complete relaxation.</p>
+            </div>
+          </article>
+        </div>
         
         <div class="cta-section">
           <p class="muted">Open 24/7 • Fitness center & group classes complimentary for all guests</p>
@@ -219,21 +226,11 @@
         <div><a href="contact.html">Contact Us</a> | <a href="accommodation.html">Accommodations</a> | <a href="index.html#our-story">About Us</a> | <a href="index.html">Home</a></div>
       </div>
       <div class="footer-copyright">
-        <div>Copyright &copy; <span id="year"></span> Ocean Resort | Meily Sy</div>
+        <div>Copyright &copy; 2025 Ocean Resort | Meily Sy</div>
       </div>
     </div>
   </footer>
 
-  <script>
-    // Mobile nav toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const links = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      links.classList.toggle('open');
-    });
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
 </body>
 </html>

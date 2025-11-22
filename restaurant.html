@@ -24,7 +24,12 @@
       </div>
     </div>
     <nav class="site-nav" aria-label="Primary">
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <ul id="nav-links" class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="accommodation.html">Accommodation</a></li>
@@ -88,34 +93,27 @@
         <h2>Breakfast - Seaside Breakfast</h2>
         <p class="muted">Daily 6:30 AM - 11:00 AM</p>
         
-        <div class="features-grid">
-          <article class="feature-item">
-            <img src="images/breakfast.jpg" alt="Breakfast Buffet" />
-            <div class="feature-content">
-              <h3>Breakfast Buffet - $22 per person</h3>
-              <ul>
-                <li><strong>Bakery Corner:</strong> Fresh croissants, Danish pastries, muffins, bagels</li>
-                <li><strong>Hot Station:</strong> Scrambled eggs, bacon, sausage, home fries</li>
-                <li><strong>Made-to-Order:</strong> Omelets, pancakes, French toast, waffles</li>
-                <li><strong>Fresh & Healthy:</strong> Seasonal fruits, yogurt parfaits, granola, smoothie bar</li>
-                <li><strong>Beverages:</strong> Premium coffee, fresh juices, specialty teas</li>
-              </ul>
-            </div>
-          </article>
+        <div class="values-grid">
+          <div class="value-card">
+            <h3>Breakfast Buffet - $22</h3>
+            <ul>
+              <li><strong>Bakery Corner</strong></li>
+              <li><strong>Hot Station</strong></li>
+              <li><strong>Made-to-Order</strong></li>
+              <li><strong>Fresh & Healthy</strong></li>
+              <li><strong>Beverages</strong></li>
+            </ul>
+          </div>
 
-          <article class="feature-item">
-            <img src="images/breakfast.jpg" alt="À La Carte Breakfast" />
-            <div class="feature-content">
-              <h3>À La Carte Selections</h3>
-              <ul>
-                <li><strong>Classic Breakfast</strong> - $16<br>Two eggs any style, bacon or sausage, toast, home fries</li>
-                <li><strong>Eggs Benedict</strong> - $18<br>Poached eggs, Canadian bacon, hollandaise, English muffin</li>
-                <li><strong>Avocado Toast</strong> - $14<br>Multigrain toast, smashed avocado, poached egg, microgreens</li>
-                <li><strong>Pancake Stack</strong> - $13<br>Buttermilk pancakes, maple syrup, whipped butter, berries</li>
-                <li><strong>Greek Yogurt Parfait</strong> - $12<br>Greek yogurt, house granola, fresh berries, honey</li>
-              </ul>
-            </div>
-          </article>
+          <div class="value-card">
+            <h3>À La Carte Selections</h3>
+            <ul>
+              <li><strong>Classic Breakfast</strong></li>
+              <li><strong>Eggs Benedict</strong></li>
+              <li><strong>Pancake Stack</strong></li>
+              <li><strong>Greek Yogurt Parfait</strong></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -129,41 +127,18 @@
         <div class="values-grid">
           <div class="value-card">
             <h3>Appetizers</h3>
-            <ul class="menu-list">
-              <li><strong>Fresh Oysters</strong> - $18<br><small>Half dozen, mignonette, cocktail sauce</small></li>
-              <li><strong>Tuna Tartare</strong> - $19<br><small>Avocado, sesame, wonton crisps</small></li>
-              <li><strong>Calamari</strong> - $16<br><small>Crispy fried, marinara, lemon aioli</small></li>
-              <li><strong>Lobster Bisque</strong> - $14<br><small>Creamy soup, cognac, chives</small></li>
-            </ul>
           </div>
 
           <div class="value-card">
             <h3>Salads</h3>
-            <ul class="menu-list">
-              <li><strong>Caesar Salad</strong> - $13<br><small>Romaine, parmesan, croutons</small></li>
-              <li><strong>Coastal Salad</strong> - $15<br><small>Mixed greens, citrus vinaigrette, shrimp</small></li>
-              <li><strong>Burrata Caprese</strong> - $17<br><small>Fresh burrata, heirloom tomatoes, basil</small></li>
-            </ul>
           </div>
 
           <div class="value-card">
             <h3>Seafood Entrées</h3>
-            <ul class="menu-list">
-              <li><strong>Grilled Atlantic Salmon</strong> - $28<br><small>Asparagus, lemon butter, rice pilaf</small></li>
-              <li><strong>Pan-Seared Scallops</strong> - $34<br><small>Cauliflower purée, pea tendrils</small></li>
-              <li><strong>Whole Branzino</strong> - $32<br><small>Grilled, herbs, roasted vegetables</small></li>
-              <li><strong>Lobster Tail</strong> - $42<br><small>Drawn butter, choice of sides</small></li>
-            </ul>
           </div>
 
           <div class="value-card">
             <h3>Land Entrées</h3>
-            <ul class="menu-list">
-              <li><strong>Filet Mignon</strong> - $38<br><small>8oz, truffle butter, mashed potatoes</small></li>
-              <li><strong>Ribeye Steak</strong> - $42<br><small>14oz, herb butter, seasonal vegetables</small></li>
-              <li><strong>Herb Roasted Chicken</strong> - $26<br><small>Half chicken, jus, root vegetables</small></li>
-              <li><strong>Wild Mushroom Risotto</strong> - $24<br><small>Parmesan, truffle oil, arugula (V)</small></li>
-            </ul>
           </div>
         </div>
 
@@ -175,43 +150,19 @@
 
         <div class="values-grid">
           <div class="value-card">
-            <h3>Small Plates</h3>
-            <ul class="menu-list">
-              <li><strong>Truffle Fries</strong> - $12<br><small>Parmesan, herbs, aioli</small></li>
-              <li><strong>Crab Cakes</strong> - $16<br><small>Remoulade, microgreens</small></li>
-              <li><strong>Charcuterie Board</strong> - $24<br><small>Artisan meats, cheeses, accompaniments</small></li>
-              <li><strong>Tuna Poke Bowl</strong> - $18<br><small>Sushi rice, avocado, edamame</small></li>
-            </ul>
+            <h3>Starter</h3>
           </div>
 
           <div class="value-card">
             <h3>Craft Mocktails</h3>
-            <ul class="menu-list">
-              <li><strong>Ocean Breeze</strong> - $9<br><small>Coconut water, lime, mint, soda</small></li>
-              <li><strong>Sunset Paradise</strong> - $9<br><small>Pineapple, orange, grenadine, ginger</small></li>
-              <li><strong>Cucumber Cooler</strong> - $8<br><small>Cucumber, lime, elderflower, tonic</small></li>
-              <li><strong>Berry Bliss</strong> - $9<br><small>Mixed berries, lemon, basil, soda</small></li>
-            </ul>
           </div>
 
           <div class="value-card">
             <h3>Desserts</h3>
-            <ul class="menu-list">
-              <li><strong>Key Lime Pie</strong> - $10<br><small>Graham crust, whipped cream</small></li>
-              <li><strong>Chocolate Lava Cake</strong> - $11<br><small>Warm center, vanilla ice cream</small></li>
-              <li><strong>Crème Brûlée</strong> - $10<br><small>Vanilla custard, caramelized sugar</small></li>
-              <li><strong>Seasonal Sorbet</strong> - $8<br><small>Chef's selection of fresh fruit sorbets</small></li>
-            </ul>
           </div>
 
           <div class="value-card">
             <h3>Coffee & Tea</h3>
-            <ul class="menu-list">
-              <li><strong>Espresso / Americano</strong> - $4 / $5</li>
-              <li><strong>Cappuccino / Latte</strong> - $6</li>
-              <li><strong>Premium Hot Chocolate</strong> - $6</li>
-              <li><strong>Specialty Teas</strong> - $5<br><small>Selection of herbal and traditional teas</small></li>
-            </ul>
           </div>
         </div>
       </div>
@@ -270,21 +221,11 @@
         <div><a href="contact.html">Contact Us</a> | <a href="accommodation.html">Accommodations</a> | <a href="index.html#our-story">About Us</a> | <a href="index.html">Home</a></div>
       </div>
       <div class="footer-copyright">
-        <div>Copyright &copy; <span id="year"></span> Ocean Resort | Meily Sy</div>
+        <div>Copyright &copy; 2025 Ocean Resort | Meily Sy</div>
       </div>
     </div>
   </footer>
 
-  <script>
-    // Mobile nav toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const links = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      links.classList.toggle('open');
-    });
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
 </body>
 </html>

@@ -24,7 +24,12 @@
       </div>
     </div>
     <nav class="site-nav" aria-label="Primary">
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <ul id="nav-links" class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="accommodation.html">Accommodation</a></li>
@@ -53,67 +58,33 @@
         <h2>Wedding Services</h2>
         <p class="muted">Say "I do" with your toes in the sand and the ocean as your backdrop</p>
         
-        <div class="grid-3">
-          <article class="card">
+        <div class="values-grid">
+          <div class="value-card">
             <img src="images/beachfront ceremony.jpg" alt="Beachfront Wedding Ceremony" />
-            <div class="card-body">
-              <h3>Beachfront Ceremony</h3>
-              <p>Exchange vows on our private beach with the sound of waves and breathtaking sunset views. Includes ceremony arch, seating, and sound system.</p>
-              <p><strong>From $2,500 (up to 100 guests)</strong></p>
-            </div>
-          </article>
+            <h3>Beachfront Ceremony</h3>
+            <p>Exchange vows on our private beach with the sound of waves and breathtaking sunset views. Includes ceremony arch, seating, and sound system.</p>
+            <p><strong>From $2,500 (up to 100 guests)</strong></p>
+          </div>
 
-          <article class="card">
+          <div class="value-card">
             <img src="images/grand ballroom.jpg" alt="Grand Ballroom Reception" />
-            <div class="card-body">
-              <h3>Grand Ballroom Reception</h3>
-              <p>Elegant indoor reception space with crystal chandeliers, ocean views, and capacity for 200 seated guests. Perfect for dinner and dancing.</p>
-              <p><strong>From $3,500 (includes tables, chairs, linens)</strong></p>
-            </div>
-          </article>
+            <h3>Grand Ballroom Reception</h3>
+            <p>Elegant indoor reception space with crystal chandeliers, ocean views, and capacity for 200 seated guests. Perfect for dinner and dancing.</p>
+            <p><strong>From $3,500 (includes tables, chairs, linens)</strong></p>
+          </div>
 
-          <article class="card">
-            <img src="images/beachfront ceremony.jpg" alt="Wedding Packages" />
-            <div class="card-body">
-              <h3>All-Inclusive Packages</h3>
-              <p>Ceremony, reception, catering, bar service, coordinator, and more. Let us handle everything while you enjoy your special day.</p>
-              <p><strong>From $8,500 (50 guests)</strong></p>
-            </div>
-          </article>
-        </div>
+          <div class="value-card">
+            <img src="images/beachfront ceremony.jpg" alt="All-Inclusive Wedding Package" />
+            <h3>All-Inclusive Package</h3>
+            <p>Ceremony, reception, catering, bar service, coordinator, and more. Let us handle everything while you enjoy your special day.</p>
+            <p><strong>From $8,500 (50 guests)</strong></p>
+          </div>
 
-        <div class="features-grid">
-          <article class="feature-item">
-            <img src="images/grand ballroom.jpg" alt="Wedding Planning Services" />
-            <div class="feature-content">
-              <h3>Dedicated Wedding Planning</h3>
-              <p>Our experienced wedding coordinators will guide you through every step of planning your dream wedding. From venue selection to vendor coordination, timeline management to day-of execution, we ensure every moment is perfect.</p>
-              <ul>
-                <li>Complimentary initial consultation</li>
-                <li>Vendor recommendations and coordination</li>
-                <li>Custom floor plans and layouts</li>
-                <li>Timeline creation and management</li>
-                <li>On-site coordination day-of</li>
-                <li>Rehearsal coordination</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="feature-item">
-            <img src="images/beachfront ceremony.jpg" alt="Wedding Amenities" />
-            <div class="feature-content">
-              <h3>Wedding Amenities & Add-Ons</h3>
-              <p>Enhance your celebration with our premium wedding services and amenities designed to make your day truly special.</p>
-              <ul>
-                <li><strong>Bridal Suite:</strong> Private preparation space with ocean views</li>
-                <li><strong>Welcome Reception:</strong> Greet guests the night before ($25/person)</li>
-                <li><strong>Next-Day Brunch:</strong> Post-wedding breakfast buffet ($28/person)</li>
-                <li><strong>Guest Room Blocks:</strong> Discounted rates for wedding guests</li>
-                <li><strong>Ceremony Musicians:</strong> String quartet or acoustic guitar</li>
-                <li><strong>Floral Arrangements:</strong> Custom designs by our florists</li>
-              </ul>
-            </div>
-          </article>
+          <div class="value-card">
+            <h3>💐 Wedding Planning Services</h3>
+            <p>Professional coordination, vendor management, timeline creation, and day-of coordination to ensure your celebration is flawless.</p>
+            <p><strong>Custom packages available</strong></p>
+          </div>
         </div>
       </div>
     </section>
@@ -124,65 +95,33 @@
         <h2>Corporate Events & Conferences</h2>
         <p class="muted">Professional venues equipped with modern technology and inspiring ocean views</p>
 
-        <div class="grid-3">
-          <article class="card">
+        <div class="values-grid">
+          <div class="value-card">
             <img src="images/oceanview conference.jpg" alt="Oceanview Conference Room" />
-            <div class="card-body">
-              <h3>Oceanview Conference Room</h3>
-              <p>State-of-the-art meeting space with 75" display, video conferencing, and natural light. Perfect for board meetings and presentations.</p>
-              <p><strong>$85/person (full day)</strong></p>
-            </div>
-          </article>
+            <h3>Oceanview Conference Room</h3>
+            <p>State-of-the-art meeting space with 75" display, video conferencing, and natural light. Perfect for board meetings and presentations.</p>
+            <p><strong>$85/person (full day)</strong></p>
+          </div>
 
-          <article class="card">
+          <div class="value-card">
             <img src="images/grand ballroom.jpg" alt="Grand Ballroom for Events" />
-            <div class="card-body">
-              <h3>Grand Ballroom - Conference Setup</h3>
-              <p>Large-scale conference venue accommodating up to 200 attendees theater-style. Includes AV equipment and coffee service.</p>
-              <p><strong>$95/person (full day)</strong></p>
-            </div>
-          </article>
+            <h3>Grand Ballroom Conference</h3>
+            <p>Large-scale conference venue accommodating up to 200 attendees theater-style. Includes AV equipment and coffee service.</p>
+            <p><strong>$95/person (full day)</strong></p>
+          </div>
 
-          <article class="card">
-            <img src="images/oceanview conference.jpg" alt="Team Building" />
-            <div class="card-body">
-              <h3>Team Building Retreats</h3>
-              <p>Multi-day corporate retreats with meeting space, activities, meals, and accommodations. Strengthen your team in paradise.</p>
-              <p><strong>Custom packages available</strong></p>
-            </div>
-          </article>
-        </div>
+          <div class="value-card">
+            <img src="images/oceanview conference.jpg" alt="Team Building Retreats" />
+            <h3>Team Building Retreats</h3>
+            <p>Multi-day corporate retreats with meeting space, activities, meals, and accommodations. Strengthen your team in paradise.</p>
+            <p><strong>Custom packages available</strong></p>
+          </div>
 
-        <div class="features-grid">
-          <article class="feature-item">
-            <img src="images/oceanview conference.jpg" alt="Conference Technology" />
-            <div class="feature-content">
-              <h3>Conference Technology & Services</h3>
-              <ul>
-                <li><strong>Audio/Visual:</strong> 75" 4K displays, wireless presentation, sound system</li>
-                <li><strong>Video Conferencing:</strong> Professional equipment for hybrid meetings</li>
-                <li><strong>High-Speed Wi-Fi:</strong> Dedicated bandwidth for your event</li>
-                <li><strong>Technical Support:</strong> On-site AV technician available</li>
-                <li><strong>Recording Services:</strong> Professional recording available</li>
-                <li><strong>Live Streaming:</strong> Broadcast your event worldwide</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="feature-item">
-            <img src="images/grand ballroom.jpg" alt="Catering Options" />
-            <div class="feature-content">
-              <h3>Conference Catering & Breaks</h3>
-              <ul>
-                <li><strong>Continental Breakfast:</strong> Pastries, fruit, coffee ($18/person)</li>
-                <li><strong>Hot Breakfast Buffet:</strong> Full breakfast selection ($24/person)</li>
-                <li><strong>Coffee Breaks:</strong> Coffee, tea, snacks ($12/person, each break)</li>
-                <li><strong>Working Lunch:</strong> Boxed lunch or buffet ($28/person)</li>
-                <li><strong>Afternoon Refreshments:</strong> Light snacks and beverages ($15/person)</li>
-                <li><strong>Reception:</strong> Cocktail reception with hors d'oeuvres (from $45/person)</li>
-              </ul>
-            </div>
-          </article>
+          <div class="value-card">
+            <h3>🎯 Corporate Services</h3>
+            <p>Full event planning, AV support, catering coordination, and team building activities tailored to your business objectives.</p>
+            <p><strong>Consultation available</strong></p>
+          </div>
         </div>
       </div>
     </section>
@@ -284,93 +223,7 @@
       </div>
     </section>
 
-    <!-- Event Planning Services -->
-    <section class="section">
-      <div class="container">
-        <h2>Event Planning Services</h2>
-        <div class="features-grid">
-          <article class="feature-item">
-            <img src="images/grand ballroom.jpg" alt="Professional Event Planning" />
-            <div class="feature-content">
-              <h3>Professional Event Coordination</h3>
-              <p>Our experienced event team will work with you from concept to execution to ensure every detail is perfect. We handle logistics, vendor coordination, timeline management, and on-site supervision.</p>
-              <ul>
-                <li>Initial consultation and venue walkthrough</li>
-                <li>Budget planning and management</li>
-                <li>Vendor recommendations and coordination</li>
-                <li>Custom floor plans and layouts</li>
-                <li>Menu planning and tasting sessions</li>
-                <li>On-site event coordination and supervision</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="feature-item">
-            <img src="images/oceanview conference.jpg" alt="Event Add-Ons" />
-            <div class="feature-content">
-              <h3>Available Event Add-Ons</h3>
-              <ul>
-                <li><strong>Valet Parking:</strong> Professional valet service for guests</li>
-                <li><strong>Photography:</strong> Professional photographer packages</li>
-                <li><strong>Entertainment:</strong> DJ, live band, or acoustic musicians</li>
-                <li><strong>Floral Design:</strong> Custom arrangements and décor</li>
-                <li><strong>Lighting Design:</strong> Uplighting, spotlights, ambiance</li>
-                <li><strong>Videography:</strong> Professional event recording</li>
-                <li><strong>Photo Booth:</strong> Interactive photo station with props</li>
-                <li><strong>Transportation:</strong> Shuttle service for guests</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Venue Capacity Chart -->
-    <section class="section">
-      <div class="container">
-        <h2>Venue Capacity Guide</h2>
-        <div class="pricing-wrap">
-          <table class="pricing">
-            <caption class="visually-hidden">Venue capacity information</caption>
-            <thead>
-              <tr>
-                <th>Venue</th>
-                <th>Theater</th>
-                <th>Banquet</th>
-                <th>Cocktail</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Grand Ballroom</td>
-                <td>250</td>
-                <td>200</td>
-                <td>300</td>
-              </tr>
-              <tr>
-                <td>Oceanview Conference Room</td>
-                <td>50</td>
-                <td>30</td>
-                <td>60</td>
-              </tr>
-              <tr>
-                <td>Beachfront Ceremony Space</td>
-                <td>100</td>
-                <td>—</td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td>Sunset Lounge</td>
-                <td>—</td>
-                <td>40</td>
-                <td>75</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
+    <!-- Call to Action -->
     <section class="cta section">
       <div class="container">
         <h2>Ready to Plan Your Event?</h2>
@@ -391,21 +244,11 @@
         <div><a href="contact.html">Contact Us</a> | <a href="accommodation.html">Accommodations</a> | <a href="index.html#our-story">About Us</a> | <a href="index.html">Home</a></div>
       </div>
       <div class="footer-copyright">
-        <div>Copyright &copy; <span id="year"></span> Ocean Resort | Meily Sy</div>
+        <div>Copyright &copy; 2025 Ocean Resort | Meily Sy</div>
       </div>
     </div>
   </footer>
 
-  <script>
-    // Mobile nav toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const links = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      links.classList.toggle('open');
-    });
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
 </body>
 </html>

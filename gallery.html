@@ -24,7 +24,12 @@
       </div>
     </div>
     <nav class="site-nav" aria-label="Primary">
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <ul id="nav-links" class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="accommodation.html">Accommodation</a></li>
@@ -45,104 +50,109 @@
         <h2>Discover Ocean Resort</h2>
         <p>Take a visual journey through our brand new resort</p>
         
-        <div class="css-slideshow-container">
-          <!-- Radio buttons for slide control (hidden) -->
-          <input type="radio" name="slideshow" id="slide1" checked>
-          <input type="radio" name="slideshow" id="slide2">
-          <input type="radio" name="slideshow" id="slide3">
-          <input type="radio" name="slideshow" id="slide4">
-          <input type="radio" name="slideshow" id="slide5">
-          <input type="radio" name="slideshow" id="slide6">
-          <input type="radio" name="slideshow" id="slide7">
-          <input type="radio" name="slideshow" id="slide8">
-          <input type="radio" name="slideshow" id="slide9">
-          <input type="radio" name="slideshow" id="slide10">
-          <input type="radio" name="slideshow" id="slide11">
-          <input type="radio" name="slideshow" id="slide12">
-          
-          <!-- Slides -->
-          <div class="css-slides">
-            <div class="css-slide">
+        <div class="slideshow-container">
+          <input type="radio" name="slide" id="slide1" checked>
+          <input type="radio" name="slide" id="slide2">
+          <input type="radio" name="slide" id="slide3">
+          <input type="radio" name="slide" id="slide4">
+          <input type="radio" name="slide" id="slide5">
+          <input type="radio" name="slide" id="slide6">
+          <input type="radio" name="slide" id="slide7">
+          <input type="radio" name="slide" id="slide8">
+          <input type="radio" name="slide" id="slide9">
+          <input type="radio" name="slide" id="slide10">
+          <input type="radio" name="slide" id="slide11">
+          <input type="radio" name="slide" id="slide12">
+
+          <div class="slides">
+            <div class="slide">
               <img src="images/hero banner.jpg" alt="Ocean Resort Exterior">
               <div class="slide-caption">Oceanfront Resort - Our brand new resort overlooking pristine beaches</div>
             </div>
 
-            <div class="css-slide">
+            <div class="slide">
               <img src="images/one bedroom suite.jpg" alt="One-Bedroom Suite">
               <div class="slide-caption">One-Bedroom Suite - Spacious suite with separate living area</div>
             </div>
 
-            <div class="css-slide">
+            <div class="slide">
               <img src="images/deluxe ocean view.jpg" alt="Ocean View">
               <div class="slide-caption">Private Balconies - Breathtaking ocean sunrises from your private outdoor space</div>
             </div>
 
-            <div class="css-slide">
+            <div class="slide">
               <img src="images/standard room.jpg" alt="Room Interior">
               <div class="slide-caption">Modern Interiors - Contemporary design with coastal-inspired décor</div>
             </div>
 
-            <div class="css-slide">
+            <div class="slide">
               <img src="images/dining.jpg" alt="Coastal Grill">
               <div class="slide-caption">Coastal Grill - Fresh seafood and wood-fired specialties</div>
             </div>
 
-            <div class="css-slide">
+            <div class="slide">
               <img src="images/breakfast.jpg" alt="Breakfast Buffet">
               <div class="slide-caption">Breakfast Buffet - Extensive breakfast selection and fresh pastries</div>
             </div>
 
-            <div class="css-slide">
+            <div class="slide">
               <img src="images/dinner sunset.jpg" alt="Sunset Dining">
               <div class="slide-caption">Sunset Dining - Spectacular ocean sunset views every evening</div>
             </div>
 
-            <div class="css-slide">
+            <div class="slide">
               <img src="images/spa.jpg" alt="Spa Services">
               <div class="slide-caption">Spa Services - Luxurious treatment rooms for massages and facials</div>
             </div>
 
-            <div class="css-slide">
+            <div class="slide">
               <img src="images/fitness.jpg" alt="Fitness Center">
               <div class="slide-caption">Fitness Center - Modern equipment with ocean views</div>
             </div>
 
-            <div class="css-slide">
+            <div class="slide">
               <img src="images/grand ballroom.jpg" alt="Grand Ballroom">
               <div class="slide-caption">Grand Ballroom - Elegant ballroom with crystal chandeliers</div>
             </div>
 
-            <div class="css-slide">
+            <div class="slide">
               <img src="images/beachfront ceremony.jpg" alt="Beachfront Wedding">
               <div class="slide-caption">Beachfront Ceremonies - Say "I do" with the ocean as your backdrop</div>
             </div>
 
-            <div class="css-slide">
+            <div class="slide">
               <img src="images/oceanview conference.jpg" alt="Conference Room">
               <div class="slide-caption">Conference Facilities - Professional meeting spaces with ocean views</div>
             </div>
           </div>
 
-          <!-- Navigation Labels (act as buttons) -->
-          <div class="css-nav">
-            <label for="slide1" class="css-prev" aria-label="Previous slide">&#10094;</label>
-            <label for="slide2" class="css-next" aria-label="Next slide">&#10095;</label>
-          </div>
-
-          <!-- Dot indicators -->
-          <div class="css-dots">
-            <label for="slide1" class="css-dot" aria-label="Go to slide 1"></label>
-            <label for="slide2" class="css-dot" aria-label="Go to slide 2"></label>
-            <label for="slide3" class="css-dot" aria-label="Go to slide 3"></label>
-            <label for="slide4" class="css-dot" aria-label="Go to slide 4"></label>
-            <label for="slide5" class="css-dot" aria-label="Go to slide 5"></label>
-            <label for="slide6" class="css-dot" aria-label="Go to slide 6"></label>
-            <label for="slide7" class="css-dot" aria-label="Go to slide 7"></label>
-            <label for="slide8" class="css-dot" aria-label="Go to slide 8"></label>
-            <label for="slide9" class="css-dot" aria-label="Go to slide 9"></label>
-            <label for="slide10" class="css-dot" aria-label="Go to slide 10"></label>
-            <label for="slide11" class="css-dot" aria-label="Go to slide 11"></label>
-            <label for="slide12" class="css-dot" aria-label="Go to slide 12"></label>
+          <!-- Navigation arrows -->
+          <div class="navigation">
+            <label for="slide12" class="prev" aria-label="Previous slide">&#10094;</label>
+            <label for="slide1" class="prev" aria-label="Previous slide">&#10094;</label>
+            <label for="slide2" class="prev" aria-label="Previous slide">&#10094;</label>
+            <label for="slide3" class="prev" aria-label="Previous slide">&#10094;</label>
+            <label for="slide4" class="prev" aria-label="Previous slide">&#10094;</label>
+            <label for="slide5" class="prev" aria-label="Previous slide">&#10094;</label>
+            <label for="slide6" class="prev" aria-label="Previous slide">&#10094;</label>
+            <label for="slide7" class="prev" aria-label="Previous slide">&#10094;</label>
+            <label for="slide8" class="prev" aria-label="Previous slide">&#10094;</label>
+            <label for="slide9" class="prev" aria-label="Previous slide">&#10094;</label>
+            <label for="slide10" class="prev" aria-label="Previous slide">&#10094;</label>
+            <label for="slide11" class="prev" aria-label="Previous slide">&#10094;</label>
+            
+            <label for="slide2" class="next" aria-label="Next slide">&#10095;</label>
+            <label for="slide3" class="next" aria-label="Next slide">&#10095;</label>
+            <label for="slide4" class="next" aria-label="Next slide">&#10095;</label>
+            <label for="slide5" class="next" aria-label="Next slide">&#10095;</label>
+            <label for="slide6" class="next" aria-label="Next slide">&#10095;</label>
+            <label for="slide7" class="next" aria-label="Next slide">&#10095;</label>
+            <label for="slide8" class="next" aria-label="Next slide">&#10095;</label>
+            <label for="slide9" class="next" aria-label="Next slide">&#10095;</label>
+            <label for="slide10" class="next" aria-label="Next slide">&#10095;</label>
+            <label for="slide11" class="next" aria-label="Next slide">&#10095;</label>
+            <label for="slide12" class="next" aria-label="Next slide">&#10095;</label>
+            <label for="slide1" class="next" aria-label="Next slide">&#10095;</label>
           </div>
         </div>
       </div>
@@ -169,21 +179,11 @@
         <div><a href="contact.html">Contact Us</a> | <a href="accommodation.html">Accommodations</a> | <a href="index.html#our-story">About Us</a> | <a href="index.html">Home</a></div>
       </div>
       <div class="footer-copyright">
-        <div>Copyright &copy; <span id="year"></span> Ocean Resort | Meily Sy</div>
+        <div>Copyright &copy; 2025 Ocean Resort | Meily Sy</div>
       </div>
     </div>
   </footer>
 
-  <script>
-    // Mobile nav toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const links = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      links.classList.toggle('open');
-    });
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
 </body>
 </html>
