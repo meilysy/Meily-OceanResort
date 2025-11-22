@@ -1,10 +1,9 @@
-# Ocean Resort Website - Signature Assignment Third Deliverable
+# Ocean Resort Website
 
 **Course:** ITC2400.19967  
 **Student:** Meily Sy  
 **Email:** sy.m@northeastern.edu  
-**Institution:** Northeastern University  
-**Submission Date:** November 21, 2025
+**Institution:** Northeastern University
 
 ## Project Overview
 
