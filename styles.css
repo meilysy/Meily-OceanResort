@@ -143,8 +143,7 @@ p  { margin: 0 0 .1em; }
 
 /* Header — Hero */
 .site-header .banner{
-  background-image: -webkit-image-set(url('images/hero banner.jpg') 1x);
-  background-image: image-set(url('images/hero banner.jpg') 1x);
+  background-image: url('images/hero%20banner.jpg');
   background-size: cover;
   background-position: center;
   min-height: min(65vh, 750px);
@@ -313,7 +312,7 @@ p  { margin: 0 0 .1em; }
   text-decoration:none; color: var(--text); font-weight: 620;
 }
 .nav-links a.active, .nav-links a:hover{
-  background: color-mix(in oklab, var(--brand) 10%, var(--paper));
+  background-color: rgba(15, 86, 132, 0.1);
   color: var(--brand);
 }
 
@@ -355,13 +354,13 @@ table.pricing{
   width: 100%; border-collapse: collapse; font-size: var(--step--1);
 }
 table.pricing thead tr{
-  background: color-mix(in oklab, var(--brand) 8%, var(--paper));
+  background-color: rgba(15, 86, 132, 0.08);
 }
 table.pricing th, table.pricing td{
   text-align: left; padding: .9rem .7rem; border: none;
 }
-table.pricing tbody tr:nth-child(odd){ background: color-mix(in oklab, var(--brand) 3%, var(--paper)); }
-table.pricing tbody tr:hover{ background: color-mix(in oklab, var(--brand) 9%, var(--paper)); }
+table.pricing tbody tr:nth-child(odd){ background-color: rgba(15, 86, 132, 0.03); }
+table.pricing tbody tr:hover{ background-color: rgba(15, 86, 132, 0.09); }
 table.pricing th{ color: var(--text); font-weight: 700; }
 
 /* Services Lists Styling */
