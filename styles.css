@@ -2,8 +2,6 @@
   /* Brand + neutrals */
   --brand: #007ea7;   /* ocean blue */
   --brand-2: #80ced7; /* sky blue */
-  --paper: #ffffff;
-  --soft: #f2f8fb;
   --text: #1e3d59;
   --muted: #6b8599;    /* secondary text */
   --paper: #ffffff;
@@ -401,7 +399,7 @@ table.pricing th{ color: var(--text); font-weight: 700; }
   font-weight: 700;
   font-size: var(--step-1);
   box-shadow: var(--shadow);
-  border: 3px solid var(--canvas);
+  border: 3px solid var(--paper);
 }
 
 .major-services > li h3 {
@@ -427,7 +425,7 @@ table.pricing th{ color: var(--text); font-weight: 700; }
 .service-details li {
   padding: 0.6rem 0.8rem;
   margin-bottom: 0.5rem;
-  background: color-mix(in oklab, var(--brand) 3%, var(--canvas));
+  background: color-mix(in oklab, var(--brand) 3%, var(--paper));
   border-radius: var(--radius-sm);
   position: relative;
   padding-left: 2.5rem;
