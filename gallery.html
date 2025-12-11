@@ -184,5 +184,61 @@
     </div>
   </footer>
 
+  <script>
+    // Automatic Slideshow
+    (function() {
+      let currentSlide = 1;
+      const totalSlides = 12;
+      const slideInterval = 5000; // Change slide every 5 seconds
+      let autoPlayTimer;
+      
+      function goToNextSlide() {
+        currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
+        document.getElementById('slide' + currentSlide).checked = true;
+      }
+      
+      function startAutoPlay() {
+        autoPlayTimer = setInterval(goToNextSlide, slideInterval);
+      }
+      
+      function stopAutoPlay() {
+        clearInterval(autoPlayTimer);
+      }
+      
+      // Start automatic slideshow
+      startAutoPlay();
+      
+      // Pause auto-play when user manually clicks navigation
+      const slideInputs = document.querySelectorAll('input[name="slide"]');
+      const navButtons = document.querySelectorAll('.prev, .next');
+      
+      slideInputs.forEach(function(input, index) {
+        input.addEventListener('change', function() {
+          if (this.checked) {
+            currentSlide = index + 1;
+            stopAutoPlay();
+            // Resume after 10 seconds of inactivity
+            setTimeout(startAutoPlay, 10000);
+          }
+        });
+      });
+      
+      navButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          stopAutoPlay();
+          // Resume after 10 seconds of inactivity
+          setTimeout(startAutoPlay, 10000);
+        });
+      });
+      
+      // Pause when user hovers over slideshow
+      const slideshowContainer = document.querySelector('.slideshow-container');
+      if (slideshowContainer) {
+        slideshowContainer.addEventListener('mouseenter', stopAutoPlay);
+        slideshowContainer.addEventListener('mouseleave', startAutoPlay);
+      }
+    })();
+  </script>
+
 </body>
 </html>

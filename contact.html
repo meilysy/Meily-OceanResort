@@ -129,6 +129,16 @@
                   <input type="tel" id="phone" name="phone" pattern="[\+]?[1-9]?[\d\-\(\)\.]{10,}" title="Enter a valid phone number (10+ digits, no spaces)" placeholder="(555)123-4567">
                 </div>
                 
+                <div class="form-group">
+                  <label for="city">City *</label>
+                  <input type="text" id="city" name="city" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="zip">Zip Code *</label>
+                  <input type="text" id="zip" name="zip" pattern="\d{5}" title="Enter a valid 5-digit zip code" placeholder="12345" maxlength="5" required>
+                </div>
+                
                 <div class="form-group full-width">
                   <label for="special-requests">Special Requests</label>
                   <textarea id="special-requests" name="special-requests" placeholder="Any special requests or dietary restrictions..."></textarea>
@@ -247,6 +257,138 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Form Validation Script with Uppercase Conversion
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      // Function to capitalize first letter
+      function capitalizeFirstLetter(input) {
+        if (input.value.length > 0) {
+          input.value = input.value.charAt(0).toUpperCase() + input.value.slice(1).toLowerCase();
+        }
+      }
+      
+      // Function to validate email format
+      function validateEmail(email) {
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailPattern.test(email);
+      }
+      
+      // Function to validate zip code (5 digits)
+      function validateZip(zip) {
+        const zipPattern = /^\d{5}$/;
+        return zipPattern.test(zip);
+      }
+      
+      // Booking Form Validation
+      const bookingForm = document.getElementById('booking-form');
+      if (bookingForm) {
+        const firstName = document.getElementById('first-name');
+        const lastName = document.getElementById('last-name');
+        const city = document.getElementById('city');
+        const zip = document.getElementById('zip');
+        const email = document.getElementById('email');
+        
+        // Capitalize first letter on blur
+        if (firstName) {
+          firstName.addEventListener('blur', function() {
+            capitalizeFirstLetter(this);
+          });
+        }
+        
+        if (lastName) {
+          lastName.addEventListener('blur', function() {
+            capitalizeFirstLetter(this);
+          });
+        }
+        
+        if (city) {
+          city.addEventListener('blur', function() {
+            capitalizeFirstLetter(this);
+          });
+        }
+        
+        // Validate on form submission
+        bookingForm.addEventListener('submit', function(e) {
+          let isValid = true;
+          let errorMessage = '';
+          
+          // Validate first name
+          if (firstName && firstName.value.trim() === '') {
+            isValid = false;
+            errorMessage += 'First name is required.\n';
+          }
+          
+          // Validate last name
+          if (lastName && lastName.value.trim() === '') {
+            isValid = false;
+            errorMessage += 'Last name is required.\n';
+          }
+          
+          // Validate city
+          if (city && city.value.trim() === '') {
+            isValid = false;
+            errorMessage += 'City is required.\n';
+          }
+          
+          // Validate zip code
+          if (zip && !validateZip(zip.value)) {
+            isValid = false;
+            errorMessage += 'Zip code must be exactly 5 digits.\n';
+          }
+          
+          // Validate email
+          if (email && !validateEmail(email.value)) {
+            isValid = false;
+            errorMessage += 'Please enter a valid email address.\n';
+          }
+          
+          if (!isValid) {
+            e.preventDefault();
+            alert('Please correct the following errors:\n\n' + errorMessage);
+          }
+        });
+      }
+      
+      // Contact Form Validation
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        const contactName = document.getElementById('contact-name');
+        const contactEmail = document.getElementById('contact-email');
+        
+        // Capitalize first letter of name on blur
+        if (contactName) {
+          contactName.addEventListener('blur', function() {
+            capitalizeFirstLetter(this);
+          });
+        }
+        
+        // Validate on form submission
+        contactForm.addEventListener('submit', function(e) {
+          let isValid = true;
+          let errorMessage = '';
+          
+          // Validate name
+          if (contactName && contactName.value.trim() === '') {
+            isValid = false;
+            errorMessage += 'Name is required.\n';
+          }
+          
+          // Validate email
+          if (contactEmail && !validateEmail(contactEmail.value)) {
+            isValid = false;
+            errorMessage += 'Please enter a valid email address.\n';
+          }
+          
+          if (!isValid) {
+            e.preventDefault();
+            alert('Please correct the following errors:\n\n' + errorMessage);
+          }
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>

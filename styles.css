@@ -910,23 +910,6 @@ button:focus-visible{
   opacity: 0.8;
 }
 
-/* Highlight active dot */
-#slide1:checked ~ .slideshow-dots label[for="slide1"],
-#slide2:checked ~ .slideshow-dots label[for="slide2"],
-#slide3:checked ~ .slideshow-dots label[for="slide3"],
-#slide4:checked ~ .slideshow-dots label[for="slide4"],
-#slide5:checked ~ .slideshow-dots label[for="slide5"],
-#slide6:checked ~ .slideshow-dots label[for="slide6"],
-#slide7:checked ~ .slideshow-dots label[for="slide7"],
-#slide8:checked ~ .slideshow-dots label[for="slide8"],
-#slide9:checked ~ .slideshow-dots label[for="slide9"],
-#slide10:checked ~ .slideshow-dots label[for="slide10"],
-#slide11:checked ~ .slideshow-dots label[for="slide11"],
-#slide12:checked ~ .slideshow-dots label[for="slide12"] {
-  background-color: var(--brand);
-  opacity: 1;
-}
-
 /* Fade animation */
 @keyframes fadeIn {
   from { opacity: 0.4; }

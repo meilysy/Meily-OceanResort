@@ -1,37 +1,43 @@
-# Ocean Resort Website
+# Ocean Resort Website - Signature Assignment Final Deliverable
 
 **Course:** ITC2400.19967  
 **Student:** Meily Sy  
 **Email:** sy.m@northeastern.edu  
-**Institution:** Northeastern University
+**Institution:** Northeastern University  
+**Submission Date:** December 11, 2025
 
 ## Project Overview
 
-This signature assignment demonstrates advanced web development skills through a comprehensive, multi-page resort website. The project showcases mastery of HTML5, CSS3, responsive design, accessibility standards, and modern web development best practices without relying on JavaScript frameworks.
+This signature assignment demonstrates advanced web development skills through a comprehensive, multi-page resort website. The project showcases mastery of HTML5, CSS3, JavaScript form validation, responsive design, accessibility standards, and modern web development best practices.
 
 **Website Theme:** Ocean Resort - A luxury oceanfront destination  
 **Pages:** 8 fully responsive pages  
 **Total Lines of CSS:** 1200+  
+**JavaScript Features:** Form validation with auto-uppercase and field validation, automatic photo slideshow
 
 ## Assignment Objectives Achieved
 
 ### Technical Requirements
 ✅ **Multi-Page Website Structure** - 8 interconnected HTML5 pages  
-✅ **Responsive Design** - Mobile-first approach with breakpoints at 768px and 480px  
+✅ **Responsive Design** - Mobile-first approach with breakpoints at 960px, 768px, 680px, and 480px  
 ✅ **Semantic HTML5** - Proper use of `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`  
 ✅ **CSS Layout Techniques** - CSS Grid, Flexbox, and modern positioning  
-✅ **Form Implementation** - Two functional forms with HTML5 validation  
+✅ **Form Implementation** - Two functional forms with JavaScript validation  
+✅ **JavaScript Validation** - Uppercase conversion, email validation, zip code validation  
 ✅ **Accessibility Compliance** - WCAG 2.1 AA standards with ARIA labels  
 ✅ **Cross-Browser Compatibility** - Tested on Chrome, Firefox, Safari, and Edge  
-✅ **W3C Validation** - All HTML and CSS files validated
+✅ **W3C Validation** - All HTML and CSS files validated  
+✅ **Support Services Page** - Detailed services with ordered/unordered lists in amenities.html
 
 ### Advanced Features Implemented
-- **Pure CSS Interactive Elements** - Navigation, slideshow, and modals without JavaScript
+- **JavaScript Form Validation** - Auto-capitalize first letter of names and city, 5-digit zip validation, email pattern validation
+- **Automatic Photo Slideshow** - JavaScript-powered auto-advancing gallery with pause on hover
+- **CSS Interactive Elements** - Navigation, modals without heavy frameworks
 - **HTML5 Form Validation** - Using `required`, `pattern`, `type`, `min` attributes
 - **CSS Pseudo-Classes** - `:target`, `:checked`, `:valid`, `:invalid` for interactivity
 - **Responsive Images** - URL-encoded paths and optimized loading
 - **Design System** - CSS custom properties for consistent theming
-- **Performance Optimization** - Minimal CSS, no JavaScript dependencies
+- **Performance Optimization** - Minimal CSS, efficient JavaScript
 
 ## 🗂️ Site Structure
 
@@ -86,7 +92,14 @@ This signature assignment demonstrates advanced web development skills through a
 ### 4. **Amenities (amenities.html)**
 - Spa and wellness services
 - Fitness center features
-- Resort services (concierge, housekeeping, etc.)
+- **Resort Support Services Section** with ordered lists for major categories:
+  1. Guest Services & Concierge
+  2. Transportation Services
+  3. Housekeeping & Maintenance
+  4. Dining Services
+  5. Business & Meeting Support
+  6. Health & Wellness Support
+- Each category includes unordered lists with specific hours of operation
 - Pricing table for premium services
 
 ### 5. **Events (events.html)**
@@ -96,11 +109,11 @@ This signature assignment demonstrates advanced web development skills through a
 - Capacity and pricing information
 
 ### 6. **Gallery (gallery.html)**
-- CSS-only photo slideshow with 12 images
-- Auto-advancing animation (5 seconds per slide)
-- Manual navigation via clickable dots
+- Photo slideshow with 12 images
+- **JavaScript auto-advancing slideshow** (changes every 5 seconds)
+- Manual navigation via clickable dots and arrows
 - Pause on hover for reading captions
-- No JavaScript required
+- Smart resume after manual interaction
 
 ### 7. **Special Offers (offers.html)**
 - Grand opening specials (25% off)
@@ -109,18 +122,24 @@ This signature assignment demonstrates advanced web development skills through a
 - Limited-time promotions
 
 ### 8. **Contact & Booking (contact.html)**
-- Comprehensive booking form with thank you message
+- Comprehensive booking form with:
+  - **City and Zip Code fields** (required)
+  - **JavaScript validation** for uppercase first letters (first name, last name, city)
+  - **Email validation** with regex pattern
+  - **Zip code validation** (exactly 5 digits)
 - Contact information display
-- General inquiry form with confirmation
-- Auto-reset forms after submission
+- General inquiry form with validation
+- Modal thank you messages
+- Real-time field validation feedback
 
 ## 💻 Technical Details
 
 ### Technologies Used
-- **HTML5**: Semantic markup, accessibility features
+- **HTML5**: Semantic markup, accessibility features, form validation attributes
 - **CSS3**: Custom properties, Grid, Flexbox, keyframe animations
+- **JavaScript**: Form validation (uppercase conversion, email/zip validation), automatic slideshow
 - **Responsive Design**: Mobile-first approach with media queries
-- **CSS-Only Slideshow**: Pure CSS animations with radio button controls
+- **Hybrid Slideshow**: CSS structure with JavaScript auto-advance functionality
 
 ### CSS Architecture
 ```css
@@ -134,43 +153,65 @@ This signature assignment demonstrates advanced web development skills through a
 - Grid layouts (.grid-3, .two-column)
 - Flexbox components (.nav-links, .banner-overlay)
 - Container system with max-width
-- Responsive breakpoints (768px, 480px)
+- Responsive breakpoints (960px, 768px, 680px, 480px)
 
 /* Components */
-- Navigation system (desktop + mobile)
+- Navigation system (desktop + mobile hamburger)
 - Cards (.card, .card-body)
 - Buttons (.btn, .btn-primary)
-- Forms (.form-grid, .form-group)
+- Forms (.form-grid, .form-group, validation states)
 - Tables (.pricing)
-- CSS-Only Slideshow (.css-slideshow-container, .css-slide)
+- Slideshow (.slideshow-container, .slide)
+- Services lists (.major-services, .service-details)
+```
+
+### JavaScript Features
+
+**Form Validation (contact.html)**
+```javascript
+// Capitalize first letter of input fields
+function capitalizeFirstLetter(input) {
+  input.value = input.value.charAt(0).toUpperCase() + 
+                input.value.slice(1).toLowerCase();
+}
+
+// Email validation with regex
+function validateEmail(email) {
+  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailPattern.test(email);
+}
+
+// Zip code validation (5 digits)
+function validateZip(zip) {
+  const zipPattern = /^\d{5}$/;
+  return zipPattern.test(zip);
+}
+```
+
+**Automatic Slideshow (gallery.html)**
+```javascript
+// Auto-advance every 5 seconds
+let currentSlide = 1;
+setInterval(() => {
+  currentSlide = currentSlide >= 12 ? 1 : currentSlide + 1;
+  document.getElementById('slide' + currentSlide).checked = true;
+}, 5000);
+
+// Pause on hover, manual navigation pauses then resumes
 ```
 
 ### Pure CSS Implementation Details
 
-**Mobile Navigation (No JavaScript)**
+**Mobile Navigation**
 ```css
 /* Checkbox hack for hamburger menu */
 .nav-toggle-checkbox:checked ~ .nav-links { display: flex; }
 .nav-toggle-checkbox:checked + .nav-toggle span:nth-child(1) { 
-  transform: rotate(45deg) translateY(8px); 
+  transform: rotate(45deg) translate(5px, 5px); 
 }
 ```
 
-**Photo Slideshow (No JavaScript)**
-```css
-/* Radio button state controls visibility */
-#slide1:checked ~ .slides .slide:nth-child(1) { display: block; }
-#slide1:checked ~ .nav-dots .dot:nth-child(1) { background: var(--brand); }
-```
-
-**Form Validation (No JavaScript)**
-```css
-/* Visual feedback using CSS pseudo-classes */
-input:invalid:not(:placeholder-shown) { border-color: #dc2626; }
-input:valid:not(:placeholder-shown) { border-color: #22c55e; }
-```
-
-**Modal Thank You Messages (No JavaScript)**
+**Modal Thank You Messages**
 ```css
 /* Hash-based modal display */
 .modal:target { display: flex; }
@@ -260,103 +301,13 @@ Tested and working on:
 
 - Image preloading for hero banners
 - Optimized CSS (no unused styles)
-- Minimal JavaScript (vanilla JS, no frameworks or libraries)
-- CSS-only slideshow reduces JavaScript dependency
+- Efficient JavaScript (vanilla JS, no frameworks or libraries)
+- Automatic slideshow with smart pause/resume
 - Efficient selectors and specificity
 - Responsive images with appropriate sizing
 - CSS containment for better rendering
 - Hardware-accelerated CSS animations
 
-## 🔧 Customization
-
-### Changing Colors
-Edit CSS custom properties in `styles.css`:
-```css
-:root {
-  --brand: #007ea7;    /* Change primary color */
-  --brand-2: #80ced7;  /* Change secondary color */
-}
-```
-
-### Adding New Pages
-1. Copy an existing HTML file
-2. Update `<title>` and meta description
-3. Modify navigation active state
-4. Update content in `<main>` section
-5. Ensure footer links are correct
-
-### Modifying the CSS-Only Slideshow
-Edit `gallery.html` to add/remove slides:
-```html
-<!-- Add radio button for new slide -->
-<input type="radio" name="slideshow" id="slide13">
-
-<!-- Add slide content -->
-<div class="css-slide">
-  <img src="images/your-image.jpg" alt="Description">
-  <div class="slide-caption">Your caption here</div>
-</div>
-
-<!-- Add dot indicator -->
-<label for="slide13" class="css-dot" aria-label="Go to slide 13"></label>
-```
-
-Update the CSS animation timings in `styles.css` if changing the number of slides!
-
-## Code Quality & Validation
-
-### W3C Standards Compliance
-✅ **HTML Validation** - All 8 HTML files pass W3C HTML Validator  
-✅ **CSS Validation** - styles.css passes W3C CSS Validator  
-✅ **No Trailing Slashes** - Void elements properly formatted (`<meta>`, `<link>`, `<img>`, `<input>`)  
-✅ **URL Encoding** - Image paths use `%20` for spaces (e.g., `hero%20banner.jpg`)  
-✅ **Semantic Structure** - Proper heading hierarchy and landmark elements  
-✅ **Clean Code** - Removed unnecessary blank lines and formatted consistently
-
-### Accessibility Standards
-✅ **WCAG 2.1 AA Compliance** - Color contrast, keyboard navigation, screen reader support  
-✅ **ARIA Labels** - Descriptive labels on navigation, forms, and interactive elements  
-✅ **Form Accessibility** - Labels associated with inputs, validation feedback visible  
-✅ **Alt Text** - All images have descriptive alternative text  
-✅ **Keyboard Navigation** - All interactive elements accessible via keyboard
-
-### Browser Testing
-✅ Chrome 90+ (Windows/Mac)  
-✅ Firefox 88+ (Windows/Mac)  
-✅ Safari 14+ (Mac/iOS)  
-✅ Microsoft Edge 90+ (Windows)  
-✅ Mobile browsers (iOS Safari, Chrome Mobile)
-
-## Learning Outcomes Demonstrated
-
-This signature assignment showcases proficiency in:
-
-1. **HTML5 Mastery**
-   - Semantic markup with proper element selection
-   - Form validation using native HTML5 attributes
-   - Accessibility features (ARIA, alt text, labels)
-   - Meta tags for SEO and responsiveness
-
-2. **Advanced CSS3 Techniques**
-   - CSS Grid and Flexbox for complex layouts
-   - CSS custom properties for design systems
-   - Pseudo-classes (`:target`, `:checked`, `:valid`, `:invalid`)
-   - Keyframe animations and transitions
-   - Media queries for responsive design
-
-3. **Web Design Principles**
-   - Mobile-first responsive methodology
-   - Consistent typography and spacing systems
-   - Color theory and contrast ratios
-   - User experience (UX) best practices
-   - Visual hierarchy and composition
-
-4. **Professional Development Practices**
-   - W3C validation and standards compliance
-   - Clean, maintainable code structure
-   - Comprehensive documentation
-   - Cross-browser compatibility testing
-   - Performance optimization
 
 ## Project Files
 
@@ -364,36 +315,52 @@ This signature assignment showcases proficiency in:
 - `index.html` - Homepage with resort overview
 - `accommodation.html` - Room types and pricing tables
 - `restaurant.html` - Dining venues and menus
-- `amenities.html` - Spa and fitness facilities
+- `amenities.html` - Spa, fitness facilities, and support services (ordered/unordered lists)
 - `events.html` - Wedding and conference packages
-- `gallery.html` - Pure CSS photo slideshow (12 images)
+- `gallery.html` - JavaScript auto-advancing photo slideshow (12 images)
 - `offers.html` - Special promotions and deals
-- `contact.html` - Booking forms with modal confirmations
+- `contact.html` - Booking forms with JavaScript validation (city, zip, email, uppercase conversion)
 
 ### Stylesheet
-- `styles.css` - Comprehensive stylesheet (1200+ lines)
+- `styles.css` - Comprehensive stylesheet (1204 lines)
   - Design system with CSS custom properties
-  - Responsive layouts with Grid and Flexbox
-  - Pure CSS interactive components
+  - Responsive layouts with Grid and Flexbox (960px, 768px, 680px, 480px breakpoints)
   - Form validation styling
+  - Services list styling with icons
   - Print styles and accessibility features
+
+### JavaScript Files (embedded in HTML)
+- `contact.html` - Form validation script (132 lines)
+  - capitalizeFirstLetter() function
+  - validateEmail() function  
+  - validateZip() function
+  - Event listeners for blur and submit
+- `gallery.html` - Automatic slideshow script (58 lines)
+  - Auto-advance with 5-second intervals
+  - Pause on hover and manual interaction
+  - Smart resume functionality
 
 ### Assets
 - `images/` folder - 14 optimized images with URL-encoded paths
 
 ## How to View
 
-1. Download/extract the "Signature Assignment Third Deliverable_MeilySy" folder
+1. Download/extract the "Signature Assignment Final Deliverable" folder
 2. Open `index.html` in any modern web browser
-3. No server or build tools required - pure HTML/CSS implementation
+3. Test the contact form validation by filling out the booking form
+4. Visit the gallery to see the automatic slideshow
+5. Check amenities.html for the support services section
 
 ## Technical Specifications
 
 - **HTML Version:** HTML5
 - **CSS Version:** CSS3
-- **Responsive Breakpoints:** 768px (tablet), 480px (mobile)
+- **JavaScript:** Vanilla JavaScript (190 lines total across 2 files)
+  - Form validation: ~132 lines
+  - Slideshow automation: ~58 lines
+- **Responsive Breakpoints:** 960px, 768px, 680px, 480px
 - **Total Files:** 8 HTML + 1 CSS + 14 images = 23 files
-- **CSS Lines:** 1221 lines
+- **CSS Lines:** 1204 lines
 - **Validation:** W3C compliant (HTML + CSS)
 
 ---
@@ -406,7 +373,7 @@ This signature assignment represents original work completed independently by Me
 **Email:** sy.m@northeastern.edu  
 **Course:** ITC2400.19967  
 **Institution:** Northeastern University  
-**Submission:** Third Deliverable  
+**Date:** December 11, 2025
 
 ---
 
